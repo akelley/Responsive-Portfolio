@@ -4,42 +4,47 @@
 	<title>Contact</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<header id="top">
-	<h1 id="name">Andrew Kelley</h1>
-	 <ul>
-		 <li><a href="index.html">About</a></li>
-		 <li><a href="portfolio.html">Portfolio</a></li>
-		 <li><a href="">Contact</a></li>
-	</ul> 
+<header id="masthead">
+	<div class="container">
+		<a href="index.html" id="logo">Andrew Kelley</a>
+		 <nav>
+			 <a href="index.html">About</a>
+			 <a href="portfolio.html">Portfolio</a>
+			 <a href="">Contact</a>
+		</nav> 
+	</div>
 </header>
 
-<div id="left">
-	<section id="mid">
-		<h1 id="about">Contact</h1>
-		<form id="contactForm">
-			<fieldset id="info">
-				Name <br><input type="text" name="name" placeholder="John Smith" autocomplete="off"><br><br>
-				Email <br><input type="email" name="email" placeholder="example@gmail.com" autocomplete="off"><br><br>
-				Message <br><textarea name="message" rows="10" cols="76"></textarea><br><br>
-				<input type="submit" value="Submit" id="sub"><br><br>
-			</fieldset>
+<div id="main-container" class="container">
+	<section class="main-section">
+		<h1>Contact</h1>
+		<form id="contact-form">
+			<ul>
+				<li><label for="name">Name:</label><input type="text" name="name" id="name" placeholder="John Smith" opacity=".7" required="required"></li>
+				<li><label for="email">Email:</label><input type="text" name="email" id="email" placeholder="example@gmail.com" required="required"></li>
+				<li><label for="message">Message:</label><textarea id="textarea" name="message" required="required" ></textarea>
+			</ul>
+			<input type="submit" name="submit">
 		</form>
 	</section>
-</div>
 
-<div id="right">
-	<section id="mid-right">
-		<h1 id="connect">Connect With Me</h1>
-		<a href="https://www.linkedin.com/in/andrew-kelley-a85588140/"><img src="assets/images/linkedin.ico" alt="linkedin" height="65px" width="65px" id="link1"></a>
-		<a href="https://github.com/akelley"><img src="assets/images/github.ico" alt="github" height="65px" width="65px" id="link2"></a>
-		<a href="https://stackoverflow.com/users/7617589/atkelley"><img src="assets/images/stackoverflow.ico" alt="stackoverflow" height="65px" width="65px" id="link3"></a>
+	<section class="sidebar">
+		<div id="connect">
+		<h2>Connect With Me</h2>
+			<a href="https://www.linkedin.com/in/andrew-kelley-a85588140/" target="_blank"><img src="assets/images/linkedin.ico" alt="LinkedIn" class="social"></a>
+			<a href="https://github.com/akelley" target="_blank"><img src="assets/images/github.ico" alt="Github" class="social"></a>
+			<a href="https://stackoverflow.com/users/7617589/atkelley" target="_blank"><img src="assets/images/stackoverflow.ico" alt="Stack Overflow" class="social"></a>
+		</div>
 	</section>
 </div>
 
-<footer>&copy;Copyright 2017 - Andrew Kelley</footer>
+<footer>
+	<div class="container">
+		&copy;Copyright 2017 - Andrew Kelley
+	</div>
+</footer>
 </body>
 </html>
